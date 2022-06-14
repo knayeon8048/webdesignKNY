@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>기말_our story</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap');
+
+        *{
+            margin: 0 auto;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+
+        /* whole rayout */
+
+        /* header rayout */
+        .logo{
+            width: 685px;
+            height: 66px;
+            float: left;
+            /* background-color: antiquewhite; */
+        }
+
+        .menu{
+            width: 510px;
+            height: 66px;
+            float: left;
+            /* background-color: azure; */
+        }
+
+        .icon{
+            width: 707px;
+            height: 66px;
+            background-color: 66px;
+            float: left;
+            /* background-color: bisque; */
+        }
+
+        /* body rayout */
+
+        /* main img rayout */
+        #mainImgWrap{
+            width: 1902px;
+            height: 822px;
+            float: left;
+
+
+            background-image: url("https://i.postimg.cc/MHdJwMqc/Untitled-1.jpg");
+            background-position: center center;
+            background-size: cover;
+        }
+
+        .scrollLine{
+            width: 20px;
+            height: 50px;
+            margin-left: 920px;
+            margin-top: 14px;
+
+            border-left: 1px solid #fbfeff;
+
+            /* background-color: rgb(240, 204, 157); */
+        }
+
+        /*intro rayout*/
+        .intro{
+            width: 1902px;
+            height: 245px;
+            float: left;
+            /* background-color: rgb(172, 118, 48); */
+        }
+
+        /* content1 rayout */
+        .contentWrap1{
+            width: 1902px;
+            height: 476px;
+            float: left;
+            /* background-color: beige; */
+        }
+
+        .CTimg1{
+            width: 765px;
+            height: 476px;
+            float: left;
+            /* background-color: rgb(56, 56, 38); */
+
+            margin-left: 374px;
+            margin-right: 0px;
+
+            background-image: url("https://i.postimg.cc/MTygqs13/Untitled-2.jpg");
+            background-position: center center;
+            background-size: cover;
+        }
+
+        .CTtext1{
+            width: 389px;
+            height: 476px;
+            float: left;
+            /* background-color: rgb(175, 175, 81); */
+
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+
+        .CTline1{
+            width: 52px;
+            height: 1px;
+            float: left;
+            /* background-color: #333333; */
+
+            margin-left: -20px;
+            margin-top: 253px
+        }
+
+        .balnk1{
+            width: 1902px;
+            height: 105px;
+            float: left;
+            /* background-color: rgb(172, 118, 48); */
+        }
+
+        /* content2 rayout */
+        .contentWrap2{
+            width: 1902px;
+            height: 476px;
+            float: left;
+            /* background-color: beige; */
+        }
+
+        .CTtext2{
+            width: 389px;
+            height: 476px;
+            float: left;
+            /* background-color: rgb(175, 175, 81); */
+
+            margin-left: 374px;
+            margin-right: 0px;
+        }
+
+        .CTline2{
+            width: 52px;
+            height: 1px;
+            float: left;
+            /* background-color: #333333; */
+
+            margin-left:-30px;
+            margin-right:-400px;
+            margin-top: 173px
+        }
+
+        .CTimg2{
+            width: 765px;
+            height: 476px;
+            float: left;
+            /* background-color: rgb(56, 56, 38); */
+
+            margin-left: 0px;
+            margin-right: 0px;
+
+            background-image: url("https://i.postimg.cc/W3PfWMxG/Untitled-21.jpg");
+            background-position: center center;
+            background-size: cover;
+        }
+
+        .balnk2{
+            width: 1902px;
+            height: 105px;
+            float: left;
+            /* background-color: rgb(172, 118, 48); */
+        }
+
+         /* content3 rayout */
+         .contentWrap3{
+            width: 1902px;
+            height: 476px;
+            float: left;
+            /* background-color: beige; */
+        }
+
+        .CTimg3{
+            width: 765px;
+            height: 476px;
+            float: left;
+            /* background-color: rgb(56, 56, 38); */
+
+            margin-left: 374px;
+            margin-right: 0px;
+
+            background-image: url("https://i.postimg.cc/KzqBkb71/story.jpg");
+            background-position: center center;
+            background-size: cover;
+        }
+
+        .CTtext3{
+            width: 389px;
+            height: 476px;
+            float: left;
+            /* background-color: rgb(175, 175, 81); */
+
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+
+        .CTline3{
+            width: 52px;
+            height: 1px;
+            float: left;
+            /* background-color: #333333; */
+
+            margin-left: -20px;
+            margin-top: 206px
+        }
+
+        .balnk3{
+            width: 1902px;
+            height: 105px;
+            float: left;
+            /* background-color: rgb(172, 118, 48); */
+        }
+
+        /* bottom img rayout */
+        .bottomContentWrap{
+            width: 1902px;
+            height: 514px;
+            float: left;
+            /* background-color: beige; */
+        }
+
+        .BCimg{
+            width: 1154px;
+            height: 436px;
+            float: left;
+            /* background-color: rgb(56, 56, 38); */
+
+            margin-left: 374px;
+            margin-right: 0px;
+
+            background-image: url("https://i.postimg.cc/0jdBTZLG/footer.jpg");
+            background-position: center center;
+            background-size: cover;
+        }
+
+        /* bottom rayout */
+        /* footer rayout */
+        .bottom{
+            width: 1902px;
+            height: 146px;
+            float: left;
+            background-color: #f7f6f4;
+        }
+
+        .bottomMain{
+            width: 1175px;
+            height: 48px;
+            float: left;
+            /* background-color: #a88e5b; */
+
+            margin-left: 347px;
+
+            border-bottom: 1px solid #bdbdbd;
+        }
+
+        .bottomSub{
+            width: 1175px;
+            height: 98px;
+            float: left;
+            /* background-color: #cacac9; */
+
+            margin-left: 347px;
+        }
+
+        /* header design */
+        .headerLogo{
+            float: left;
+            margin-left: 317px;
+            margin-right: 198px;
+        }
+
+        .navi{
+		    text-align: center;
+            margin-top: 19px;
+		}
+        
+        .navi a{
+        	color: #000000;
+        	font-size: 13px;
+        	text-decoration: none;
+        	/*margin-bottom: 20px;*/
+			margin-right: 30px;
+			margin-left: 30px;
+        }
+
+        .navi a:hover{
+        	color: #255A44;
+        	border-bottom: 2px solid #255A44;
+        }
+
+        /*main image design*/
+
+        .subtext{
+            font-size: 35px;
+            font-weight: 900;
+            margin-left: 870px;
+            margin-top: 324px;
+
+            color: #f7ffff;
+        }
+
+        .maintext{
+            font-size: 16px;
+            text-align: center;
+            font-weight: 100;
+
+            margin-left: -40px;
+            margin-top: 34px;
+
+            line-height: 26px;
+
+            color: #fffeff;
+        }
+
+        .detailtext{
+            font-size: 15px;
+            margin-top: 260px;
+            margin-left: 894px;
+
+            color: #fbfeff;
+        }
+
+        /* intro design */
+        .introText{
+            font-size: 22px;
+            text-align:center;
+
+            margin-left: -62px;
+            margin-top: 84px;
+
+            color: #424242;
+        }
+
+        /*content1 design*/
+        .CTimgText1{
+            font-family: 'Noto Sans KR', sans-serif;
+            font-size: 35px;
+
+            text-align:center;
+            font-weight:lighter;
+
+            margin-left: 0px;
+            margin-top: 177px;
+
+            color: #ececec;
+
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+        }
+
+        .CTtextMain{
+            font-family: 'Noto Sans KR', sans-serif;
+            font-weight:900;
+            font-size: 32px;
+            text-align:left;
+
+            line-height: 40px;
+
+            margin-left: 41px;
+            margin-top: 187px;
+
+            color: #1f1f1f;
+        }
+
+        .CTtextSub{
+            font-size: 16px;
+            text-align:left;
+
+            margin-left: 41px;
+            margin-top: 9px;
+
+            color: #7c7875;
+        }
+
+        .CTtextDetail{
+            font-size: 16px;
+            text-align:left;
+
+            margin-left: 41px;
+            margin-top: 42px;
+
+            color: #474e54;
+        }
+
+        /*content2 design*/
+        .CTimgText2{
+            font-family: 'Noto Sans KR', sans-serif;
+            font-size: 35px;
+
+            text-align:center;
+            font-weight:lighter;
+
+            margin-left: 0px;
+            margin-top: 177px;
+
+            color: #ececec;
+
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+        }
+
+        .CTtextMain2{
+            font-family: 'Noto Sans KR', sans-serif;
+            font-weight:900;
+            font-size: 32px;
+            text-align:left;
+
+            line-height: 40px;
+
+            margin-left:-315px;
+            margin-right: 41px;
+            margin-top: 115px;
+
+            color: #1f1f1f;
+        }
+
+        .CTtextSub2{
+            font-size: 16px;
+            text-align:left;
+
+            margin-left:-315px;
+            margin-right: 41px;
+            margin-top: 12px;
+
+            line-height: 23px;
+
+            color: #7c7875;
+        }
+
+        .CTtextDetail2{
+            font-size: 16px;
+            text-align:left;
+
+            margin-left:-315px;
+            margin-right: 41px;
+            margin-top: 42px;
+
+            color: #474e54;
+        }
+
+        /*content3 design*/
+        .CTimgText3{
+            font-family: 'Noto Sans KR', sans-serif;
+            font-size: 35px;
+
+            text-align:center;
+            font-weight:lighter;
+
+            margin-left: 0px;
+            margin-top: 177px;
+
+            color: #ececec;
+
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+        }
+
+        .CTtextMain3{
+            font-family: 'Noto Sans KR', sans-serif;
+            font-weight:900;
+            font-size: 32px;
+            text-align:left;
+
+            line-height: 40px;
+
+            margin-left: 41px;
+            margin-top: 124px;
+
+            color: #1f1f1f;
+        }
+
+        .CTtextSub3{
+            font-size: 16px;
+            text-align:left;
+
+            margin-left: 41px;
+            margin-top: 9px;
+
+            color: #7c7875;
+        }
+
+        .CTtextDetail3{
+            font-size: 16px;
+            text-align:left;
+
+            margin-left: 41px;
+            margin-top: 42px;
+
+            color: #474e54;
+        }
+
+        /*bottom content design*/
+        .BCimgSub{
+                float: left;
+                font-size: 16px;
+                color: #7C7262;
+
+                margin-top: 130px;
+                margin-left: 530px;
+        }
+
+        .BCimgMain{
+                float: left;
+                font-size: 21px;
+                color: #000;
+                
+                text-align: center;
+
+                margin-top: 29px;
+                margin-left: 325px;
+
+                text-shadow: 2px 2px 5px #FFFFFF;
+        }
+        
+        .BCimgButton{
+                float: left;
+
+                width: 60px;
+                font-size: 15px;
+                color: #fcfcfc;
+                border: 1px solid #255A44;
+                background-color: #255A44;
+                border-radius: 30px;
+
+                padding-left: 40px;
+                padding-right: 25px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+
+                margin-top: 70px;
+                margin-left: 525px;
+        }
+
+        .BCimgMore{
+            text-decoration: none;
+            color: #fcfcfc;
+            text-align: center;
+        }
+
+        .BCimgMore a:hover{
+        	color: #dfdfdf;
+        	background-color: #255A44;
+        }
+
+         /* bottom design */
+         .BTmainText{
+            float: left;
+            font-size: 15px;
+            color: #5d5f5c;
+
+            margin-left: 10px;
+            margin-top: 13px;
+            margin-right: 90px;
+        }
+
+        .BTmainIcons{
+            float: left;
+            margin-left: 0px;
+        }
+
+        .BTsubText{
+            float: left;
+
+            font-size: 15px;
+            color: #5d5f5c;
+
+            margin-left: 10px;
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img class="headerLogo" src="https://i.postimg.cc/d1s6NgPw/image.png" alt="logo"></a>
+        </div>
+
+        <div class="menu">
+            <div class="navi">
+                <a href="기말project_our story.html">O HUI STORY</a>
+                <a href="기말project_best sellers.html">BEST SELLER</a>
+                <a href="#">NEWS</a>
+                <a href="#">STORE</a>
+             </div>
+        </div>
+
+        <div class="icon">
+            <img src="https://i.postimg.cc/52dF4G9J/image.jpg" alt="icon">
+        </div>
+
+    </header>
+
+    <div id="mainImgWrap">
+        <div class="mainImgContent">
+            <p class="subtext">O HUI</p>
+            <div class="maintext">
+                <p>오휘는 엄격한 기준으로 안정성 높은 제품만을 전합니다.<br>또한 완벽한 아름다움의 실현을 위하여 끊임없이 연구하고 창조하는<br>감성적 피부 과학 BRAND입니다</p>
+            </div>
+            <p class="detailtext">SCROLL</p>
+
+            <div class="scrollLine">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="intro">
+        <p class="introText">감성적 피부 과학,<br>제품 그 이상의 작품을 완성하는 예술의 경지로</p>
+    </div>
+
+    <div class="contentWrap1">
+        <div class="CTimg1">
+            <p class="CTimgText1">THE BEST COMBINATION<br>OF RAW MATERIALS</p>
+        </div>
+
+        <div class="CTtext1">
+            <div class="CTline1">
+
+            </div>
+            <p class="CTtextMain">남다른<br>기술력과 집념으로<br>최적의 원료 조합을 찾다.</p>
+            <p class="CTtextSub">각 원료들의 최적의 조합을 찾기 위한 노력</p>
+            <p class="CTtextDetail">숙련된 연구원들이<br>오랜 기간 동안 끊임없는 연구를 통해<br>질 좋은 원료를 피부에 전달하고, 효능을 효과적으로<br>발휘할 수 있는 최적의 원료를 개발하는 데 힘씁니다.</p>
+        </div>
+    </div>
+
+    <div class="balnk1">
+        
+    </div>
+
+    <div class="contentWrap2">
+        <div class="CTtext2">
+            <div class="CTtext2">
+                <div class="CTline2">
+
+                </div>
+                <p class="CTtextMain2">엄격한 기준으로<br>안정성 높은<br>제품만을 전하다.</p>
+                <p class="CTtextSub2">뛰어난 퀄리티와<br>안전성 높은 제품을 위한 노력</p>
+                <p class="CTtextDetail2">유해물질 분석 외<br>72시간 미생물 테스트를<br>72시간 미생물 테스트를<br>거칠 뿐만 아니라 소비자들에게 보다<br>나은 사용감을 전하고자 신규 제형에 대해<br>약 120일동안 다양한 테스트를 진행합니다.</p>
+            </div>
+        </div>
+
+        <div class="CTimg2">
+            <p class="CTimgText2">72 HOUR<br>MICROBIOLOGICAL TEST</p>
+        </div>
+    </div>
+
+    <div class="balnk2">
+        
+    </div>
+
+    <div class="contentWrap3">
+        <div class="CTimg3">
+            <p class="CTimgText3">BEAUTIFUL AND CONVENIENT<br>APPEARANCE DESIGN</p>
+        </div>
+
+        <div class="CTtext3">
+            <div class="CTtext3">
+                <div class="CTline3">
+
+                </div>
+                <p class="CTtextMain3">경험마저<br>우아하도록<br>기술을 예술로<br>승화시키다.</p>
+                <p class="CTtextSub3">제품을 사용하는 경험을<br>더 아름답게 하기 위한 노력</p>
+                <p class="CTtextDetail3">사용하는 순간마다 만족할 수 있는<br>편리한 디자인 설계와 소비자의 감성까지<br>섬세하게 고민한 흔적을 엿볼 수 있는 아름다운<br>외관 디자인은 품격 있는 경험마저 선사합니다.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="balnk3">
+       
+    </div>
+
+    <div class="bottomContentWrap">
+        <div class="BCimg">
+            <p class="BCimgSub">BRAND NEWS</p>
+            <p class="BCimgMain">오휘는 이렇게 제품을 구성하는 모든 요소들이 빼어난 조화를 이뤄<br>아름다움이라는 예술로 승화되기를 꿈꿉니다.</p>
+            <p class="BCimgButton"><a href="#" class="BCimgMore">MORE</a></p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="bottom">
+            <div class="bottomMain">
+                <p class="BTmainText">개인정보처리방침   ㅣ   이용약관   ㅣ   E-mail무단수집거부   ㅣ   Contact us   ㅣ  Sitemap </p>
+                <img class="BTmainIcons" src="https://i.postimg.cc/PqGPKSrS/image.png" alt="copyright icons">
+            </div>
+            <div class="bottomSub">
+                <p class="BTsubText">(주)LG생활건강 대표이사 : 차석용 주소 : 03184 서울특별시 종로구 새문안로 58 LG광화문빌딩<br>사업자등록번호 : 107-81-98143 고객상담실 : 080-023-7007</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

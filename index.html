@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>index.html</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+        *{
+            margin: 0 auto;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+
+        /* whole rayout */
+
+        /* header rayout */
+        .logo{
+            width: 685px;
+            height: 66px;
+            float: left;
+            /* background-color: antiquewhite; */
+        }
+
+        .menu{
+            width: 510px;
+            height: 66px;
+            float: left;
+            /* background-color: azure; */
+        }
+
+        .icon{
+            width: 707px;
+            height: 66px;
+            background-color: 66px;
+            float: left;
+            /* background-color: bisque; */
+        }
+
+        /* body rayout */
+        #mainImgWrap{
+            width: 1902px;
+            height: 602px;
+            float: left;
+
+
+            background-image: url("https://i.postimg.cc/CKXrPSHD/image.jpg");
+            background-position: center center;
+            background-size: cover;
+        }
+
+        .bestsellers{
+            width: 1902px;
+            height: 845px;
+            float: left;
+            /* background-color: rgb(172, 118, 48); */
+        }
+
+        .BSsub{
+            width: 1902px;
+            height: 137px;
+            float: left;
+            /* background-color: #dfdfdf; */
+        }
+
+        .BSmain{
+            width: 1902px;
+            height: 62px;
+            float: left;
+            /* background-color: #8d825d; */
+        }
+
+        .BSimg{
+            width: 1902px;
+            height: 425px;
+            float: left;
+            /* background-color: #d3c289; */
+            
+        }
+
+        .BSimgText1{
+            width: 1902px;
+            height: 24px;
+            float: left;
+            /* background-color: #f5e9c3; */
+        }
+
+        .BSimgText2{
+            width: 1902px;
+            height: 78px;
+            float: left;
+            /* background-color: #cabb88; */
+        }
+
+        .bottomLine{
+            width: 1130px;
+            height: 207px;
+            float: left;
+            /* background-color: #dfdfdf; */
+
+            margin-left: 348px;
+        }
+
+        .BSlineBold{
+            width: 380px;
+            height: 78px;
+            float: left;
+            /* background-color: #70674b; */
+
+            border-top: 4px solid #255A44;
+        }
+
+        .BSlineRegular{
+            width: 750px;
+            height: 78px;
+            float: left;
+            /* background-color: #c5b78e; */
+
+            border-top: 2.5px solid #cacaca;
+        }
+
+        .middleImg{
+            width: 1600px;
+            height: 605px;
+            float: left;
+            /* background-color: antiquewhite; */
+            margin-left: 151px;
+
+            background-image: url("https://i.postimg.cc/5twxdNy8/img.jpg");
+            background-position: center center;
+            background-size: cover;
+        }
+
+        .review{
+            width: 1902px;
+            height: 665px;
+            float: left;
+            /* background-color: beige; */
+        }
+
+        .reviewTopSpace{
+            width: 1902px;
+            height: 114px;
+            float: left;
+            /* background-color: rgb(145, 145, 140); */
+        }
+
+        .reviewboxWrap{
+            width: 1168px;
+            height: 550px;
+            float: left;
+            /* background-color: rgb(56, 56, 38); */
+
+            margin-left: 345px;
+        }
+
+        .instagram{
+            width: 1902px;
+            height: 612px;
+            float: left;
+            /* background-color: bisque; */
+        }
+
+        .instaText{
+            width: 496px;
+            height: 258px;
+            float: left;
+            /* background-color: rgb(131, 103, 69); */
+
+            margin-left: 656px;
+            margin-top: 0px;
+        }
+
+        .instaImg{
+            width: 1047px;
+            height: 291px;
+            float: left;
+            /* background-color: rgb(201, 165, 121); */
+
+            margin-left: 393px;
+            margin-top: 30px;
+        }
+
+        .brandStory{
+            width: 1902px;
+            height: 667px;
+            float: left;
+            /* background-color: blanchedalmond; */
+        }
+
+        .BSwrap{
+            width: 1597px;
+            height: 503px;
+            float: left;
+            /* background-color: rgb(119, 94, 56); */
+
+            margin-top: 40px;
+            margin-left: 137px;
+
+            background-image: url("https://i.postimg.cc/0Qz8GxGh/bottom2.jpg");
+            background-position: center center;
+            background-size: cover;
+        }
+
+        /* footer rayout */
+        .bottom{
+            width: 1902px;
+            height: 146px;
+            float: left;
+            background-color: #f7f6f4;
+        }
+
+        .bottomMain{
+            width: 1175px;
+            height: 48px;
+            float: left;
+            /* background-color: #a88e5b; */
+
+            margin-left: 347px;
+
+            border-bottom: 1px solid #bdbdbd;
+        }
+
+        .bottomSub{
+            width: 1175px;
+            height: 98px;
+            float: left;
+            /* background-color: #cacac9; */
+
+            margin-left: 347px;
+        }
+
+        /* header design */
+        .headerLogo{
+            float: left;
+            margin-left: 317px;
+            margin-right: 198px;
+        }
+
+        .navi{
+		    text-align: center;
+            margin-top: 19px;
+		}
+        
+        .navi a{
+        	color: #000000;
+        	font-size: 13px;
+        	text-decoration: none;
+        	/*margin-bottom: 20px;*/
+			margin-right: 30px;
+			margin-left: 30px;
+        }
+
+        .navi a:hover{
+        	color: #255A44;
+        	border-bottom: 2px solid #255A44;
+        }
+
+        /*main image design*/
+        .mainImg{
+            float: left;
+            margin-left: 1055px;
+            margin-top: 126px;
+        }
+
+        .subtext{
+            font-size: 20px;
+            font-weight: 200;
+            margin-bottom: 15px;
+        }
+
+        .maintext{
+            font-size: 32px;
+            padding-top: 15px;
+            padding-bottom: 19px;
+            border-top: 1px solid #333333;
+            border-bottom: 1px solid #333333;
+        }
+
+        .detailtext{
+            font-size: 16px;
+            margin-top: 30px;
+        }
+
+        .bottomtext{
+            float: left;
+
+            width: 79px;
+            font-size: 15px;
+            margin-top: 50px;
+            border: 1px solid #255A44;
+            border-radius: 30px;
+
+            padding-left: 37px;
+            padding-right: 37px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .mainMore{
+            text-decoration: none;
+            color: #000000;
+        }
+
+        .mainMore{
+			text-align: center;
+		}
+        
+        .mainMore a:hover{
+        	color: #dfdfdf;
+        	background-color: #255A44;
+        }
+
+        /*bestseller design*/
+        .topsub{
+            float: left;
+            font-size: 15px;
+            color: #255A44;
+
+            margin-left: 350px;
+            margin-top: 122px;
+        }
+
+        .topmain{
+            float: left;
+            font-size: 30px;
+            color: #000;
+
+            margin-left: 350px;
+            margin-top: 24px;
+            margin-left: 350px;
+        }
+
+        .topImg{
+            float: left;
+            margin-left: 0px;
+            margin-top: 31px;
+            margin-right: 350px;
+        }
+
+        .bsimg1{
+            margin-left: 401px;
+            margin-top: 65px;
+        }
+
+        .bsimgdetail{
+            float: left;
+            font-size: 16px;
+
+            margin-left: 429px;
+            margin-top: 1px;
+            margin-right: 100px;
+        }
+
+        .bsimgdetail2{
+            float: left;
+            font-size: 16px;
+            
+            margin-top: 1px;
+            margin-right: 120px;
+        }
+
+        .stargroup1{
+            float: left;
+
+            margin-left: 460px;
+            margin-top: 8px;
+            margin-right: 6px;
+        }
+
+        .stargroup2{
+            float: left;
+            font-size: 13px;
+            color: #8B8B8B;
+
+            margin-top: 10px;
+            margin-right: 195px;
+        }
+        
+        .stargroup3{
+            float: left;
+
+            margin-top: 8px;
+            margin-right: 6px;
+        }
+
+        .stargroup4{
+            float: left;
+            font-size: 13px;
+            color: #8B8B8B;
+
+            margin-top: 10px;
+            margin-right: 170px;
+        }
+
+        .stargroup5{
+            float: left;
+
+            margin-top: 10px;
+        }
+
+        .stargroup6{
+            float: left;
+            font-size: 13px;
+            color: #8B8B8B;
+
+            margin-top: 8px;
+        }
+
+        /*middleimg design*/
+        .middleSub{
+                float: left;
+                font-size: 16px;
+                color: #7C7262;
+
+                margin-top: 190px;
+                margin-left: 694px;
+        }
+
+        .middleMain{
+                float: left;
+                font-size: 30px;
+                color: #000;
+                
+                text-align: center;
+
+                margin-top: 29px;
+                margin-left: 585px;
+
+                text-shadow: 2px 2px 5px #FFFFFF;
+        }
+        
+        .middleButton{
+                float: left;
+
+                width: 60px;
+                font-size: 15px;
+                color: #fcfcfc;
+                border: 1px solid #255A44;
+                background-color: #255A44;
+                border-radius: 30px;
+
+                padding-left: 40px;
+                padding-right: 25px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+
+                margin-top: 70px;
+                margin-left: 690px;
+        }
+
+        .middlenMore{
+            text-decoration: none;
+            color: #fcfcfc;
+        }
+
+        .middlenMore{
+			text-align: center;
+		}
+        
+        .middlenMore a:hover{
+        	color: #dfdfdf;
+        	background-color: #255A44;
+        }
+
+        /*review design*/
+        .reviewBox{
+            float: left;
+            width: 1065px;
+            height: 496px;
+
+            margin-top: 55px;
+            margin-left: 104px;
+
+            background-color: #f6f6f6;
+        }
+
+        .reviewImg{
+            float: left;
+            width: 581px;
+            height: 499px;
+
+            margin-top: -550px;
+            margin-left: 0px;
+        }
+
+        .RVimg{
+            float: left;
+
+            margin-top: 78px;
+            margin-left: 529px;
+        }
+
+        .RVmain{
+            float: left;
+            font-size: 30px;
+            color: #000;
+
+            margin-top: 35px;
+            margin-left: 529px;
+        }
+
+        .RVdetail{
+            float: left;
+            font-size: 15px;
+            color: #706F6F;
+
+            margin-top: 19px;
+            margin-left: 534px;
+        }
+
+        .RVbottomText{
+            float: left;
+
+            width: 79px;
+            font-size: 16px;
+            margin-top: 63px;
+            margin-left: 534px;
+            border: 1px solid #255A44;
+            
+            border-radius: 30px;
+
+            padding-left: 37px;
+            padding-right: 37px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+
+        }
+
+        .RVmore{
+            text-decoration: none;
+            color: #000000;
+
+            text-align: center;
+        }
+        
+        a.RVmore :hover{
+        	color: #dfdfdf;
+        	background: #255A44;
+        }
+        
+        /*instagram detail*/
+        .IStext1{
+            float: left;
+            font-size: 40px;
+            color: #255A44;
+
+            font-weight: 800;
+
+            margin-top: 108px;
+            margin-left: 140px;
+        }
+
+        .IStext2{
+            float: left;
+            font-size: 30px;
+            color: #868686;
+
+            font-weight: 800;
+
+            margin-top: 8px;
+            margin-left: 90px;
+        }
+
+        .ISimg1{
+            margin-left: 7px;
+            margin-top: 5px;
+            margin-right: 5px;
+        }
+
+        .ISimg2{
+            margin-right: 5px;
+        }
+
+        .ISimg3{
+            margin-right: 5px;
+        }
+
+        .ISimg4{
+            margin-right: 5px;
+        }
+
+        /*brand stoty design*/
+        .bsSub{
+                float: left;
+                font-size: 20px;
+                color: #fffff3;
+
+                margin-top: 136px;
+                margin-left: 725px;
+        }
+
+        .bsMain{
+                float: left;
+                font-size: 30px;
+                color: #fff4ff;
+                
+                text-align: center;
+
+                margin-top: 22px;
+                margin-left: 555px;
+        }
+        
+        .bsButton{
+                float: left;
+
+                width: 75px;
+                font-size: 15px;
+                color: #fcfcfc;
+                border: 1px solid #255A44;
+                background-color: #255A44;
+                border-radius: 30px;
+
+                padding-left: 38px;
+                padding-right: 35px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+
+                margin-top: 70px;
+                margin-left: 719px;
+        }
+
+        .bsMore{
+            text-decoration: none;
+            color: #fcfcfc;
+        }
+
+        .bsMore{
+			text-align: center;
+		}
+        
+        .bsMore a:hover{
+        	color: #dfdfdf;
+        	background-color: #255A44;
+        }
+
+        /* bottom design */
+        .BTmainText{
+            float: left;
+            font-size: 13px;
+            color: #767974;
+
+            margin-left: 10px;
+            margin-top: 13px;
+            margin-right: 90px;
+        }
+
+        .BTmainIcons{
+            float: left;
+            margin-left: 0px;
+        }
+
+        .BTsubText{
+            float: left;
+
+            font-size: 13px;
+            color:  #767974;
+
+            margin-left: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img class="headerLogo" src="https://i.postimg.cc/d1s6NgPw/image.png" alt="logo"></a>
+        </div>
+
+        <div class="menu">
+            <div class="navi">
+                <a href="기말project_our story.html">O HUI STORY</a>
+                <a href="기말project_best sellers.html">BEST SELLER</a>
+                <a href="#">NEWS</a>
+                <a href="#">STORE</a>
+             </div>
+        </div>
+
+        <div class="icon">
+            <img src="https://i.postimg.cc/52dF4G9J/image.jpg" alt="icon">
+        </div>
+
+    </header>
+
+    <div id="mainImgWrap">
+        <div class="mainImg">
+            <p class="subtext">채워지고, 환해지고, 강화되는</p>
+            <div class="maintext">
+                <p>별처럼 빛나는 피부<br>에이지 리커버리 플래닝 앰플</p>
+            </div>
+            <p class="detailtext">콜라겐 탄력 케어로 만든<br>빛. 다른 피부</p>
+            <p class="bottomtext"><a href="#" class="mainMore">자세히 보기</a></p>
+        </div>
+    </div>
+
+    <div class="bestsellers">
+        <div class="BSsub">
+            <p class="topsub">BEST SELLER</p>
+        </div>
+
+        <div class="BSmain">
+            <p class="topmain">지금 인기 있는 제품들</p>
+            <img class="topImg" src="https://i.postimg.cc/y88TMjBs/image.jpg" alt="arrow">
+        </div>
+        
+        <div class="BSimg">
+            <img class="bsimg1" src="https://i.postimg.cc/8cyHyXcF/best1.jpg" alt="best1">
+            <img class="bsimg2"src="https://i.postimg.cc/RF4Lvxn6/best2.jpg" alt="best2">
+            <img class="bsimg3"src="https://i.postimg.cc/C5dDKhM1/best3.jpg" alt="best3">
+        </div>
+
+        <div class="BSimgText1">
+            <p class="bsimgdetail">더 퍼스트 제너츄어 심-마이크로 에센스</p>
+            <p class="bsimgdetail2">더 퍼스트 제너츄어 앰풀 어드밴스드</p>
+            <p>프라임 어드밴서 앰플 세럼</p>
+        </div>
+
+        <div class="BSimgText2">
+            <div class="stargroup1">
+                <img src="https://i.postimg.cc/8zxzhv8d/5.jpg" alt="star5">
+            </div>
+
+            <div class="stargroup2">
+                <p>509개 리뷰</p>
+            </div>
+
+            <div class="stargroup3">
+                <img src="https://i.postimg.cc/YqwsD0Rk/image.jpg" alt="star4">
+            </div>
+
+            <div class="stargroup4">
+                <p>1,875개 리뷰</p>
+            </div>
+
+            <div class="stargroup5">
+                <img src="https://i.postimg.cc/YqwsD0Rk/image.jpg" alt="star4">
+            </div>
+
+            <div class="stargroup6">
+                <p>1,049개 리뷰</p>
+            </div>
+        </div>
+
+        <div class="bottomLine">
+            <div class="BSlineBold"> </div>
+            <div class="BSlineRegular"> </div>
+        </div>
+
+    </div>
+
+    <div class="middleImg">
+        <p class="middleSub">BRAND STORY</p>
+        <p class="middleMain">오휘의 원칙과 미학<br>절대적 아름다움을 마주하다</p>
+        <p class="middleButton"><a href="#" class="middlenMore">MORE</a></p>
+    </div>
+
+    <div class="review">
+        <div class="reviewTopSpace"></div>
+        <div class="reviewboxWrap">
+            <div class="reviewBox">
+                <img class="RVimg" src="https://i.postimg.cc/6pk7DJDn/image.png" alt="quotation mark">
+                <p class="RVmain">피부 컨디션이 꾸준하게<br>유지되고, 더 밝아진 느낌이에요.</p>
+                <p class="RVdetail">더 퍼스트 제너츄어 심-마이크로 에센스 사용후기</p>
+                <p class="RVbottomText"><a href="#" class="RVmore">자세히 보기</a></p>
+            </div>
+            <div class="reviewImg">
+               <img src="https://i.postimg.cc/MK7cQr4Y/review2.jpg" alt="review1">
+            </div>
+        </div>
+    </div>
+
+    <div class="instagram">
+        <div class="instaText">
+            <p class="IStext1">#with O HUI</p>
+            <p class="IStext2">#O HUI #O HUI MIRACLE</p>
+        </div>
+        <div class="instaImg">
+            <img class="ISimg1" src="https://i.postimg.cc/pybWs8Gj/INSTA.jpg" alt="insta1">
+            <img class="ISimg2"src="https://i.postimg.cc/4N67rN6G/INSTA3.jpg" alt="insta2">
+            <img class="ISimg3"src="https://i.postimg.cc/TPwKLVZ2/INSTA2.jpg" alt="insta3">
+            <img class="ISimg4"src="https://i.postimg.cc/sXWD7wKz/INSTA4.jpg" alt="insta4">
+        </div>
+    </div>
+
+    <div class="brandStory">
+        <div class="BSwrap">
+            <p class="bsSub">BRAND STORY</p>
+            <p class="bsMain">오휘는 완벽한 아름다움의 실현을 위하여<br>끊임없이 연구하고 창조하는 BRAND입니다</p>
+            <p class="bsButton"><a href="#" class="bsMore">자세히 보기</a></p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="bottom">
+            <div class="bottomMain">
+                <p class="BTmainText">개인정보처리방침   ㅣ   이용약관   ㅣ   E-mail무단수집거부   ㅣ   Contact us   ㅣ  Sitemap </p>
+                <img class="BTmainIcons" src="https://i.postimg.cc/PqGPKSrS/image.png" alt="copyright icons">
+            </div>
+            <div class="bottomSub">
+                <p class="BTsubText">(주)LG생활건강 대표이사 : 차석용 주소 : 03184 서울특별시 종로구 새문안로 58 LG광화문빌딩<br>사업자등록번호 : 107-81-98143 고객상담실 : 080-023-7007</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
